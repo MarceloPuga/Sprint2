@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/Assets/images/favicon.png" type="image/x-icon">
+    <title>Mindy Photos</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="anchors">
+                <a href="/index.html">Home</a>
+            </div>
+            <div>
+                <a href="/Assets/pages/AboutUs.html">About us</a>
+            </div>
+            <div>
+                <a href="/Assets/pages/Contact.html">Contact</a>
+            </div>
+            <div>
+                <a href="/Assets/pages/services.html">Services</a>
+            </div>
+            <div>
+                <a href="/Assets/pages/rating.html">Rating</a>
+            </div>
+            <div>
+                <a href="#">Hire</a>
+            </div>
+        </nav>
+        <div id="logoconteiner">
+            <img src="/Assets/images/logo.png" alt="Logo" class="Logo">
+        </div>
+    </header>
+    <main>
+        <section class="Title">
+            <h1>HIRE</h1>
+            <h2>Fill out the form so we can attend your event</h2>
+        </section>
+        <div class="hire">
+            <article>
+                <h4>Our Location</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25127.861979010777!2d-120.55184999999999!3d38.070782900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809095c2047467ad%3A0x27371c33f7ec3cb9!2sAngels%20Camp%2C%20California%2095222%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1697827632032!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </article>
+
+            <form action="/show_data.html">
+                <label for="name">
+                    First name anda last name:
+                </label>
+                <input name="name" id="name" type="text">
+                <label for="phone">
+                    Phone number:
+                </label>
+                <input name="phone" id="phone" type="text">
+
+                <label for="services">
+                    choose services:
+                </label>
+                <select name="Services" id="services">
+                    <option value="Wedding">Wedding</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Kids Birthday">Kids Birthday</option>
+                    <option value="Photo/Studio/Outside">Photo/Studio/Outside</option>
+                </select>
+                <label for="Date">
+                    choose Date:
+                </label>
+                <input type="date" name="date" value="">
+                <fieldset >
+                    <legend>Paymant options </legend>
+                    <label class="radio">
+                        <input type="radio" name="payment" value="Cash">
+                        Cash
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="payment" value="Credit Card">
+                        Credit Card
+                    </label>
+                    <label class="radio">
+                        <input type="radio" class="radio" name="payment" value="Credit Debit">
+                        Credit Debit
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Massage (Location and Time)</legend>
+                    <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                </fieldset>
+                <div class="Checkbox">
+                    <input name="checkbox" type="checkbox" value="OK">
+                    <label for="">I accept terms and condition...</label>
+                    <input type="submit">
+                </div>
+
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <h3>Created by: Marcelo Puga</h3>
+    </footer>
+
+</body>
+
+</html>

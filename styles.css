@@ -14,12 +14,16 @@
 body {
 
     background-color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 header {
 
-    width: 100%;
-    height: 8vh;
+
+    height: 7vh;
     background-color: var(--color-secundario);
     display: flex;
     justify-content: space-between;
@@ -28,9 +32,14 @@ header {
 
 .Logo {
 
-    width: 4vw;
-    object-fit: cover;
+
+    object-fit: contain;
+    width: 8vw;
+    height: 7vh;
+    
+   
 }
+
 
 nav {
 
@@ -57,11 +66,13 @@ a:hover {
 }
 
 main {
-    min-height: 84vh;
+    min-height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
 }
 
 h1,
@@ -196,11 +207,10 @@ h3 {
 
 .contact1 {
 
-    text-align: center;
     margin-top: 5vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+
 
 }
 
@@ -223,7 +233,6 @@ h3 {
 .box1 {
 
     background-color: var(--color-secundario);
-    margin-right: 80vh;
     padding: 0.5rem;
     border-radius: 2vh;
 }
@@ -241,7 +250,7 @@ td,
 th {
 
     border: 1px solid var(--color-font);
-    font-size: 20px;
+    font-size: 15px;
     border-collapse: collapse;
     text-align: center;
     color: white;
@@ -253,8 +262,8 @@ tr,
 td,
 th {
 
-    height: 10vh;
-    width: 20vw;
+    height: 8vh;
+    width: 8vw;
 }
 
 .divphoto1 {
@@ -296,7 +305,185 @@ th {
     object-fit: contain;
 
 }
-ul{
+
+ul {
     color: var(--color-font);
     font-size: 15px;
+}
+
+article>iframe {
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+    
+}
+
+article {
+
+    text-align: center;
+
+}
+
+.hire {
+
+
+    display: flex;
+    gap: 2rem;
+    color: var(--color-font);
+}
+
+form {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    color: var(--color-font);
+}
+
+.Payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Checkbox {
+
+    display: flex;
+    flex-direction: row;
+}
+
+textarea {
+    resize: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+
+    header {
+
+        flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+
+    }
+    header img{
+
+        width: 100%;
+        height: 100%;
+
+
+    }
+  
+
+    nav {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .hire {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .firstphoto {
+
+        flex-direction: column;
+
+    }
+
+    .secondphoto {
+
+        flex-direction: column;
+    }
+
+    .thirdphoto {
+
+        flex-direction: column;
+    }
+
+    .image2 {
+
+
+        width: 50%;
+    }
+
+    .paragraph {
+
+        width: 100%;
+    }
+
+    .paragraph1 {
+        width: 100%;
+
+    }
+
+    .contact1 {
+
+        flex-direction: column;
+    }
+
+    .image3 {
+
+        width: 100%;
+    }
+
+    .divphoto1 {
+
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+
+    }
+
+    .divphoto1 img {
+
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .list1 {
+
+        width: 80%;
+        height: 50%;
+
+    }
+
+    .divphoto2 {
+
+        flex-direction: column;
+        width: 70%;
+        height: 50%;
+
+
+    }
+
+    .divphoto2 img {
+
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .list2 {
+
+        width: 80%;
+        height: 50%;
+
+    }
+
+    .photos {
+        flex-wrap: wrap;
+    }
+
+   
+   
+
 }
